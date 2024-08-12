@@ -1,0 +1,75 @@
+<!-- ============================================ -->
+<!--                   Logos                      -->
+<!-- ============================================ -->
+
+<section id="logos-1430">
+    <div class="cs-container">
+       <div class="flex flex-col mx-auto justify-center items-center">
+        <h2 class="cs-title mx-auto">Our Trusted Partners</h2>
+        <!--Ideally you want to use svg's for the file path image, which is why these aren't wrapped in picture elements for different screen sizes-->
+       <div class="flex gap-20 mt-8">
+        <picture class="cs-picture">
+            <img class="cs-logo" src="src/assets/images/wally-vac-avetta.png" alt="logo" width="287" height="65" loading="lazy" decoding="async">
+        </picture>
+        <picture class="cs-picture">
+            <img class="cs-logo" src="src/assets/images/wally-vac-isn.png" alt="logo" width="229" height="55" loading="lazy" decoding="async">
+        </picture>
+        <picture class="cs-picture">
+            <img class="cs-logo" src="src/assets/images/wallyvac-comply-logo.png" alt="logo" width="235" height="53" loading="lazy" decoding="async">
+        </picture>
+        <picture class="cs-picture">
+            <img class="cs-logo" src="src/assets/images/wallyvac-cor-logo.png" alt="logo" width="180" height="50" loading="lazy" decoding="async">
+        </picture>
+       </div>
+       </div>
+    </div>
+</section>
+<style>
+/*-- -------------------------- -->
+<---           Logos            -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+  #logos-1430 {
+    padding: var(--sectionPadding);
+    background-color: var(--bodyTextColorWhite);
+    position: relative;
+    z-index: 1;
+  }
+  #logos-1430 .cs-container {
+    width: 100%;
+    max-width: 80rem;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    column-gap: 2.5rem;
+  }
+  #logos-1430 .cs-picture {
+    /* 120px - 150px */
+    width: clamp(7.5rem, 12vw, 9.375rem);
+    height: clamp(7.5rem, 12vw, 9.375rem);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #logos-1430 .cs-logo {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    display: block;
+    object-fit: contain;
+  }
+
+}
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+  #logos-1430 .cs-container {
+    justify-content: space-between;
+    flex-wrap: nowrap;
+  }
+}
+                                    
+</style>                            

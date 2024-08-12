@@ -1,12 +1,13 @@
 :root {
     /* Add these styles to your global stylesheet, which is used across all site pages. You only need to do this once. All elements in the library derive their variables and base styles from this central sheet, simplifying site-wide edits. For instance, if you want to modify how your h2's appear across the site, you just update it once in the global styles, and the changes apply everywhere. */
     --primary: #04107e;
-    --primaryLight: #ffba43;
-    --secondary: #ffba43;
-    --secondaryLight: #ffba43;
-    --headerColor: #1a1a1a;
-    --bodyTextColor: #4e4b66;
+    --primaryLight: #43f2ff;
+    --secondary: #43b4ff;
+    --secondaryLight: #439bff;
+    --headerColor: #000000;
+    --bodyTextColor: #f6f6fa;
     --bodyTextColorWhite: #fafbfc;
+    --bgSlate: #ebebeb;
     /* 13px - 16px */
     --topperFontSize: clamp(0.8125rem, 1.6vw, 1rem);
     /* 31px - 49px */
@@ -56,7 +57,7 @@ body {
     width: 100%;
     max-width: 40.625rem;
     margin: 0;
-    color: var(--bodyTextColor);
+    color: var(--headerColor);
 }
                             
 .cs-button-solid{
