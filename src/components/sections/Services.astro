@@ -1,0 +1,241 @@
+---
+import Button from "../ui/Button.astro"
+---
+<!-- ============================================ --><!--                  Services                    --><!-- ============================================ -->
+<section id="services-1176">
+  <div class="cs-container">
+    <div class="cs-content">
+      <span class="cs-topper pb-4 quin">Our services</span>
+      <div class="sm:flex">
+        <h2 class="cs-title">Unmatched Hydrovac Solutions for Every Need</h2>
+        <p class="cs-text">
+          Experience expert excavation with Wally Vac. Based in Edmonton,
+          Alberta, we offer hydrovac services that prioritize precision and
+          safety. Our advanced technology allows us to work around existing
+          structures, ensuring minimal disruption while uncovering utilities,
+          digging trenches, or cleaning up debris. Trust our skilled team for
+          efficient, reliable results and a hassle-free experience.
+        </p>
+      </div>
+    </div>
+    <ul class="cs-card-group">
+      <li class="cs-item rounded-md">
+        <picture class="cs-picture">
+          <img
+            class="cs-icon"
+            loading="lazy"
+            decoding="async"
+            src="src/assets/images/wally-vac-hydrovac-icon.svg"
+            alt="icon"
+            height="48"
+          />
+        </picture>
+        <h3 class="cs-h3">Hydrovac</h3>
+        <a href="/services" class="cs-link">
+          Learn More
+          <img
+            class="cs-arrow"
+            loading="lazy"
+            decoding="async"
+            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/red-arrow-right.svg"
+            alt="icon"
+            width="20"
+            height="20"
+            aria-hidden="true"
+          />
+        </a>
+      </li>
+      <li class="cs-item rounded-md">
+        <picture class="cs-picture">
+          <img
+            class="cs-icon"
+            loading="lazy"
+            decoding="async"
+            src="src/assets/images/wally-vac-oilfield-icon.svg"
+            alt="icon"
+            width="48"
+            height="48"
+          />
+        </picture>
+        <h3 class="cs-h3">Oilfield Services</h3>
+        <a href="/services" class="cs-link">
+          Learn More
+          <img
+            class="cs-arrow"
+            loading="lazy"
+            decoding="async"
+            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/red-arrow-right.svg"
+            alt="icon"
+            width="20"
+            height="20"
+            aria-hidden="true"
+          />
+        </a>
+      </li>
+      <li class="cs-item rounded-md">
+        <picture class="cs-picture">
+          <img
+            class="cs-icon"
+            loading="lazy"
+            decoding="async"
+            src="src/assets/images/wally-vac-trenching-icon.svg"
+            alt="icon"
+            width="48"
+            height="48"
+          />
+        </picture>
+        <h3 class="cs-h3">Trenching</h3>
+        <a href="/services" class="cs-link">
+          Learn More
+          <img
+            class="cs-arrow"
+            loading="lazy"
+            decoding="async"
+            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/red-arrow-right.svg"
+            alt="icon"
+            width="20"
+            height="20"
+            aria-hidden="true"
+          />
+        </a>
+      </li>
+    </ul>
+    <Button link={'/services'} title="Learn More About Our Services"/>
+  </div>
+</section>
+<style>
+  /*-- -------------------------- -->
+<---         Services           -->
+<--- -------------------------- -*/
+  /* Mobile - 360px */
+  @media only screen and (min-width: 0rem) {
+    #services-1176 {
+      padding: var(--sectionPadding);
+      background: var(--bgSlate);
+    }
+    #services-1176 .cs-container {
+      max-width: 34.375rem;
+      width: 100%;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      /* 48px - 64px */
+      gap: clamp(3rem, 6vw, 4rem);
+    }
+    #services-1176 .cs-content {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      /* centers content horizontally, set to flex-start to left align */
+      align-items: baseline;
+      /* set text align to left if content needs to be left aligned */
+      text-align: left;
+    }
+    #services-1176 .cs-topper {
+        font-size: 2rem;
+    }
+    #services-1176 .cs-title,#services-1176 .cs-text {
+        text-align: left;
+    }
+
+    #services-1176 .cs-card-group {
+      width: 100%;
+      margin: 0 auto;
+      padding: 0;
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      /* 16px - 20px */
+      gap: clamp(1rem, 2.3vw, 1.25rem);
+    }
+    #services-1176 .cs-item {
+      list-style: none;
+      width: 100%;
+      margin: 0 auto;
+      /* prevents padding and border from affecting height and width */
+      box-sizing: border-box;
+      padding: 1.5rem;
+      padding-bottom: 2rem;
+      background-color: #f7f7f7;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      position: relative;
+      z-index: 1;
+      transition:
+        box-shadow 0.3s,
+        border-color 0.3s;
+      text-align: center;
+      grid-column: span 12;
+      grid-row: span 1;
+    }
+    #services-1176 .cs-item:hover .cs-h3,
+    #services-1176 .cs-item:hover .cs-link {
+      color: var(--primary);
+    }
+    #services-1176 .cs-item:hover .cs-arrow {
+      filter: initial;
+    }
+    #services-1176 .cs-picture {
+      width: 6.25rem;
+      height: auto;
+      margin: 0.5rem 0 1.5rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      /* prevents flexbox from squishing it */
+      flex: none;
+    }
+    #services-1176 .cs-icon {
+      width: 6.5rem;
+      height: auto;
+    }
+    #services-1176 .cs-h3 {
+      /* 20px - 25px */
+      font-size: clamp(1.25rem, 2.5vw, 1.5625rem);
+      line-height: 1.2em;
+      font-weight: bold;
+      margin: 0 0 0.75rem;
+      color: var(--headerColor);
+      transition: color 0.3s;
+      text-align: inherit;
+    }
+   
+    #services-1176 .cs-link {
+      font-size: 1rem;
+      line-height: 1.2em;
+      font-weight: 700;
+      margin-top: auto;
+      color: var(--headerColor);
+      text-decoration: none;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      transition: color 0.3s;
+      text-align: inherit;
+    }
+    #services-1176 .cs-link:hover .cs-arrow {
+      transform: translateX(0.25rem);
+    }
+    #services-1176 .cs-arrow {
+      width: 1.25rem;
+      height: auto;
+      display: block;
+      filter: grayscale(1) brightness(0);
+      transition:
+        filter 0.3s,
+        transform 0.3s;
+    }
+  }
+  /* Tablet - 768px */
+  @media only screen and (min-width: 48rem) {
+    #services-1176 .cs-container {
+      max-width: 80rem;
+    }
+    #services-1176 .cs-item {
+      grid-column: span 4;
+    }
+  }
+</style>

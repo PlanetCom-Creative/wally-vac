@@ -1,293 +1,178 @@
-<!-- ============================================ -->
-<!--                    Hero                      -->
-<!-- ============================================ -->
----
-import Button from "../ui/Button.astro";
----
-
-<section id="hero-1061">
-    <div class="cs-container">
-        <div class="cs-content">
-            <h2 class="cs-title capitalize">Experience is our Advantage</h2>
-            <p class="cs-text">
-                We are an industry leading full-service hydrovac company based out of Edmonton, Alberta
-            </p>
-            <a href="" class="cs-button-solid">Our Services</a>
+<!-- ============================================ --><!--                    Hero                      --><!-- ============================================ -->
+<section id="hero-1059">
+  <div class="cs-container">
+    <div class="cs-content">
+      <div class="flex justify-center items-center">
+        <div class="flex-container">
+          <h2 class="cs-title capitalize quin">Precision Driven by Experience</h2>
+          <p class="cs-text">
+            We provide top-quality, full-service hydrovac solutions, combining
+            advanced technology and expert knowledge to handle any excavation
+            project with precision and efficiency.
+          </p>
+          <a href="" class="cs-button-solid">Request Appointment</a>
         </div>
-        <ul class="cs-card-group">
-            <li class="cs-item">
-                <picture class="cs-icon-wrapper">
-                    <img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/car1.svg" alt="car" width="48" height="48">
-                </picture>
-                <h3 class="cs-h3">Hydrovac</h3>
-               
-            </li>
-            <li class="cs-item">
-                <picture class="cs-icon-wrapper">
-                    <img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/car2.svg" alt="car" width="48" height="48">
-                </picture>
-                <h3 class="cs-h3">Oilfield Services</h3>
-               
-            </li>
-            <li class="cs-item">
-                <picture class="cs-icon-wrapper">
-                    <img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/car3.svg" alt="car" width="48" height="48">
-                </picture>
-                <h3 class="cs-h3">Trenching</h3>
-               
-            </li>
-            <li class="cs-item">
-                <picture class="cs-icon-wrapper">
-                    <img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/car3.svg" alt="car" width="48" height="48">
-                </picture>
-                <h3 class="cs-h3">View All Serivces</h3>
-               <Button/>
-            </li>
-        </ul>
+        <div class="flex-container">
+            <img src="https://ik.imagekit.io/oy5bt2urx/Wally-Vac-Truck.webp" alt="">
+        </div>
+      </div>
     </div>
+  </div>
 
-    <!-- Background Image, there's a background image in the CSS for the parallax effect you'll need to change as well if you swap out our images -->
-    <picture class="cs-background">
-        <source media="(max-width: 600px)" srcset="https://vantagehydrovac.com/wp-content/uploads/2020/12/Asset-1.png">
-        <source media="(min-width: 601px)" srcset="https://vantagehydrovac.com/wp-content/uploads/2020/12/Asset-1.png">
-        <img decoding="async" src="c" alt="mechanic" width="2250" height="1500" aria-hidden="true">
-    </picture>
+  <!-- Background Image -->
+  <picture class="cs-background">
+    <source
+      media="(max-width: 600px)"
+      srcset="https://vantagehydrovac.com/wp-content/uploads/2020/12/Asset-1.png"
+    />
+    <source
+      media="(min-width: 601px)"
+      srcset="https://vantagehydrovac.com/wp-content/uploads/2020/12/Asset-1.png"
+    />
+    <img
+      decoding="async"
+      src="https://vantagehydrovac.com/wp-content/uploads/2020/12/Asset-1.png"
+      alt="mechanic"
+      width="2250"
+      height="1500"
+      aria-hidden="true"
+    />
+  </picture>
 </section>
 <style>
-/*-- -------------------------- -->
+  /*-- -------------------------- -->
 <---           Hero             -->
 <--- -------------------------- -*/
 
-/* Mobile - 360px */
-@media only screen and (min-width: 0rem) {
-    #hero-1061 {
-        padding: var(--sectionPadding);
-        /* 200px - 300px - leaving extra space for the navigation */
-        padding-top: clamp(12.5rem, 31.95vw, 18.75rem);
-        position: relative;
-        z-index: 10;
-        background: var(--bgSlate);
+  /* Mobile - 360px */
+  @media only screen and (min-width: 0rem) {
+    #hero-1059 {
+      /* Centers button */
+      text-align: left;
+      /* 200px - 300px - leaving extra space for the navigation */
+      padding: clamp(12.5rem, 31.95vw, 18.75rem) 1rem 0;
+      /* 130px - 200px */
+      padding-bottom: clamp(8.125rem, 16.5vw, 12.5rem);
+      position: relative;
+      z-index: 1;
     }
-    #hero-1061 .cs-background {
-        width: 100%;
-        height: 55%;
-        display: block;
-        position: absolute;
-        top: 0;
-        left: 0;
-        z-index: -2;
+    #hero-1059 .cs-background {
+      width: 100%;
+      height: 100%;
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -2;
     }
-    #hero-1061 .cs-background:before {
-        /* Overlay */
-        content: "";
-        width: 100%;
-        height: 100%;
-        background: #1a1a1a;
-        opacity: 0.84;
-        position: absolute;
-        display: block;
-        top: 0;
-        left: 0;
-        z-index: 1;
-        /* prevents the cursor from interacting with it */
-        pointer-events: none;
+    #hero-1059 .cs-background:before {
+      /* Overlay */
+      content: "";
+      width: 100%;
+      height: 100%;
+      background: #1a1a1a;
+      opacity: 0.84;
+      position: absolute;
+      display: block;
+      top: 0;
+      left: 0;
+      z-index: 1;
+      /* prevents the cursor from interacting with it */
+      pointer-events: none;
     }
-    #hero-1061 .cs-background img {
-        position: absolute;
-        top: 0;
-        left: 0;
-        height: 100%;
-        width: 100%;
-        object-fit: cover;
-        /* makes the top of the image start at the top of the parent */
-        object-position: top;
+    #hero-1059 .cs-background img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      /* makes the top of the image start at the top of the parent */
+      object-position: top;
     }
-    #hero-1061 .cs-container {
-        width: 100%;
-        max-width: 80rem;
-        margin: auto;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        gap: clamp(6.25rem, 9vw, 7.5rem);
+    #hero-1059 .cs-container {
+      width: 100%;
+      max-width: 80rem;
+      margin: auto;
     }
-    #hero-1061 .cs-content {
-        /* set text align to left if content needs to be left aligned */
-        text-align: center;
-        width: 100%;
-        max-width: 39.375rem;
-        display: flex;
-        flex-direction: column;
-        /* centers content horizontally, set to flex-start to left align */
-        align-items: center;
+    #hero-1059 .cs-content {
+      /* set text align to left if content needs to be left aligned */
+      text-align: center;
+      width: 100%;
+      max-width: 79.375rem;
+      display: flex;
+      flex-direction: column;
+      /* centers content horizontally, set to flex-start to left align */
+      align-items: center;
     }
-    #hero-1061 .cs-title {
-        /* 39px - 61px */
-        font-size: clamp(2.4375rem, 6.4vw, 3.8125rem);
-        font-weight: 700;
-        line-height: 1.2em;
-        text-align: inherit;
-        max-width: 51.8125rem;
-        margin: 0 auto 1rem 0;
-        color: #fff;
-        position: relative;
+    #hero-1059 .cs-title {
+      /* 39px - 61px */
+      font-size: clamp(2.4375rem, 6.4vw, 3.8125rem);
+      font-weight: 700;
+      line-height: 1.2em;
+      text-align: inherit;
+      max-width: 51.8125rem;
+      margin: 0 auto 1rem 0;
+      color: #fff;
+      position: relative;
     }
-    #hero-1061 .cs-text {
-        /* 16px - 20px */
-        font-size: clamp(1rem, 1.95vw, 1.25rem);
-        line-height: 1.5em;
-        text-align: inherit;
-        width: 100%;
-        /* 464px - 622px */
-        max-width: clamp(29rem, 60vw, 38.785rem);
-        margin: 0 0 2.5rem 0;
-        color: #fff;
+    #hero-1059 .cs-text {
+      /* 16px - 20px */
+      font-size: clamp(1rem, 1.95vw, 1.25rem);
+      line-height: 1.5em;
+      text-align: inherit;
+      width: 100%;
+      /* 464px - 622px */
+      max-width: clamp(29rem, 60vw, 38.785rem);
+      margin: 0 0 2.5rem 0;
+      color: #fff;
     }
-    #hero-1061 .cs-button-solid {
-        font-size: 1rem;
-        /* 46px - 56px */
-        line-height: clamp(2.875rem, 5.5vw, 3.5rem);
-        text-decoration: none;
-        font-weight: 700;
-        margin: 0;
-        color: #fff;
-        padding: 0 1.5rem;
-        background-color: var(--primary);
-        display: inline-block;
-        position: relative;
-        z-index: 1;
+    #hero-1059 .cs-button-solid {
+      font-size: 1rem;
+      /* 46px - 56px */
+      line-height: clamp(2.875rem, 5.5vw, 3.5rem);
+      text-decoration: none;
+      font-weight: 700;
+      margin: 0;
+      color: #fff;
+      padding: 0 1.5rem;
+      background-color: var(--secondary);
+      display: inline-block;
+      position: relative;
+      z-index: 1;
     }
-    #hero-1061 .cs-button-solid:before {
-        content: "";
-        position: absolute;
-        display: block;
-        height: 100%;
-        width: 0%;
-        background: #000;
-        opacity: 1;
-        top: 0;
-        left: 0;
-        z-index: -1;
-        transition: width 0.3s;
+    #hero-1059 .cs-button-solid:before {
+      content: "";
+      position: absolute;
+      display: block;
+      height: 100%;
+      width: 0%;
+      background: #000;
+      opacity: 1;
+      top: 0;
+      left: 0;
+      z-index: -1;
+      transition: width 0.3s;
     }
-    #hero-1061 .cs-button-solid:hover:before {
-        width: 100%;
+    #hero-1059 .cs-button-solid:hover:before {
+      width: 100%;
     }
-    #hero-1061 .cs-card-group {
-        margin: 0;
-        padding: 0;
-        width: 100%;
-        display: grid;
-        grid-template-columns: repeat(12, 1fr);
-        row-gap: 1.875rem;
+  }
+  /* Tablet - 768px */
+  @media only screen and (min-width: 48rem) {
+    #hero-1059 .cs-content {
+      text-align: left;
+      align-items: flex-start;
     }
-    #hero-1061 .cs-item {
-        width: 100%;
-        text-align: left;
-        list-style: none;
-        margin: 0;
-        /* 24px - 32px */
-        padding: clamp(1.5rem, 3vw, 2rem);
-        background-color: var(--primary);
-        box-shadow: 0px 12px 80px 0px rgba(26, 26, 26, 0.08);
-        /* prevents padding and border from affecting height and width */
-        box-sizing: border-box;
-        grid-column: span 12;
-        grid-row: span 1;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: center;
-        position: relative;
-        z-index: 1;
-        border-radius: 5px;
+    #hero-1059 .cs-background:before {
+      background: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.94) 0%,
+        rgba(0, 0, 0, 0.94) 2%,
+        rgba(0, 0, 0, 0) 100%
+      );
+      opacity: 1;
     }
-    #hero-1061 .cs-icon-wrapper {
-        width: 4.25rem;
-        height: 4.25rem;
-        margin: 0 0 1.5rem 0;
-        background-color: var(--primary);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        position: relative;
-    }
-    #hero-1061 .cs-icon {
-        width: 3rem;
-        height: auto;
-    }
-    #hero-1061 .cs-h3 {
-        /* 20px - 25px */
-        font-size: clamp(1.25rem, 2.5vw, 1.5625rem);
-        line-height: 1.2em;
-        font-weight: bold;
-        text-align: inherit;
-        margin: 0 0 0.75rem 0;
-        color: var(--bodyTextColorWhite);
-    }
-    #hero-1061 .cs-item-text {
-        /* 14px - 16px */
-        font-size: clamp(0.875rem, 1.5vw, 1rem);
-        line-height: 1.5em;
-        max-width: 28.125rem;
-        margin: 0;
-        padding: 0;
-        color: var(--bodyTextColor);
-    }
-}
-/* Tablet - 768px */
-@media only screen and (min-width: 48rem) {
-    #hero-1061 .cs-container {
-        align-items: flex-start;
-    }
-    #hero-1061 .cs-content {
-        text-align: left;
-        margin-left: 0;
-        align-items: flex-start;
-    }
-    #hero-1061 .cs-card-group {
-        column-gap: 1.875rem;
-    }
-    #hero-1061 .cs-item {
-        grid-column: span 6;
-    }
-    #hero-1061 .cs-background {
-        height: 70%;
-    }
-    #hero-1061 .cs-background:before {
-        background: linear-gradient(
-            to right,
-            rgba(0, 0, 0, 0.94) 0%,
-            rgba(0, 0, 0, 0.94) 2%,
-            rgba(0, 0, 0, 0) 100%
-        );
-        opacity: 1;
-    }
-}
-/* Desktop - 1300px */
-@media only screen and (min-width: 81.25rem) {
-    #hero-1061 .cs-item {
-        grid-column: span 3;
-    }
-    #hero-1061 .cs-background {
-        height: 80%;
-    }
-}
-/* Large Desktop Parallax Effect - 100px */
-@media only screen and (min-width: 100rem) {
-    #hero-1061 .cs-background {
-        background: url("https://vantagehydrovac.com/wp-content/uploads/2020/12/Asset-1.png");
-        background-size: cover;
-        background-position: center top;
-        background-repeat: no-repeat;
-        /* creates the parallax effect */
-        background-attachment: fixed;
-    }
-    #hero-1061 .cs-background img {
-        display: none;
-    }
-}
+  }
+</style>
 
-                                    
-</style>                                
