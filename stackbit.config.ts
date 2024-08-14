@@ -1,27 +1,35 @@
-// stackbit.config.ts
-import { defineStackbitConfig } from "@stackbit/types";
-import { GitContentSource } from "@stackbit/cms-git";
+import { defineStackbitConfig, getLocalizedFieldForLocale, SiteMapEntry } from '@stackbit/types';
+import { LocalContentSource } from '@stackbit/cms-local'; // Example for local content
 
 export default defineStackbitConfig({
-  stackbitVersion: "~0.6.0",
+  ssgName:'custom',
+  stackbitVersion: '~0.6.0',
   contentSources: [
-    new GitContentSource({
-      rootPath: __dirname,
-      contentDirs: ["content"],
-      models: [
-        {
-          name: "Page",
-          type: "page",
-          urlPath: "/{slug}",
-          filePath: "content/pages/{slug}.json",
-          fields: [{ name: "title", type: "string", required: true }]
-        }
-      ],
-      assetsConfig: {
-        referenceType: "relative",
-        assetsDir:'src',
-        uploadDir: "images",
-      }
-    })
-  ]
+    new LocalContentSource({
+      // Configuration for local content source
+      contentPath: './content', // Path to your local content directory
+    }),
+  ],
+  modelExtensions: [
+    { name: 'page', type: 'page', urlPath: '/{slug}' },
+  ],
+  siteMap: ({ documents, models }) => {
+    const pageModels = models
+      .filter((m) => m.type === 'page')
+      .map((m) => m.name);
+    return documents
+      .filter((d) => pageModels.includes(d.modelName))
+      .map((document) => {
+        const slug = getLocalizedFieldForLocale(document.fields.slug);
+        if (!slug.value) return null;
+        const urlPath = '/' + slug.value.replace(/^\/+/, '');
+        return {
+          stableId: document.id,
+          urlPath,
+          document,
+          isHomePage: urlPath === '/',
+        };
+      })
+      .filter(Boolean) as SiteMapEntry[];
+  },
 });
