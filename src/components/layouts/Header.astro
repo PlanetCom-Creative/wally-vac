@@ -74,6 +74,15 @@
         }
     }
 
+    const navLinks = document.querySelectorAll("#cs-navigation .cs-li-link");
+  navLinks.forEach(link=>{
+    link.addEventListener("click", function(){
+      CShamburgerMenu.classList.remove("cs-active");
+        CSnavbarMenu.classList.remove("cs-active");
+        CSbody.classList.remove("cs-active");
+        ariaExpanded();
+    });
+  })
     // This script adds a class to the body after scrolling 100px
     // and we used these body.scroll styles to create some on scroll 
     // animations with the navbar
