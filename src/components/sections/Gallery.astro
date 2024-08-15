@@ -10,44 +10,46 @@ const images = [
 ---
 
 <!-- ============================================ --><!--                   Gallery                    --><!-- ============================================ -->
-<section id="gallery-44">
-  <div class="cs-container">
-    <div class="cs-content">
-      <h2 class="cs-title">Gallery</h2>
-      <p class="cs-text">
-        <!-- Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. -->
-      </p>
-    </div>
-    <ul class="cs-image-group">
-      {
-        images?.map((image, index) => (
-          <li class="cs-item">
-            <picture class="cs-picture">
-              <source
-                media="(max-width: 600px)"
-                srcset={image}
-              />
-              <source
-                media="(min-width: 601px)"
-                srcset={image}
-              />
-              <img
-                loading="lazy"
-                decoding="async"
-                src={image}
-                alt="fancy house"
-                width="346"
-                height="346"
-                class="rounded-md"
-              />
-            </picture>
-          </li>
-        ))
-      }
-    </ul>
-    <a href="/" class="cs-button-solid">Get In Touch</a>
-  </div>
-</section>
+<div id="gallery">
+    <section id="gallery-44">
+        <div class="cs-container">
+          <div class="cs-content">
+            <h2 class="cs-title">Gallery</h2>
+            <p class="cs-text">
+              <!-- Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. -->
+            </p>
+          </div>
+          <ul class="cs-image-group">
+            {
+              images?.map((image, index) => (
+                <li class="cs-item">
+                  <picture class="cs-picture">
+                    <source
+                      media="(max-width: 600px)"
+                      srcset={image}
+                    />
+                    <source
+                      media="(min-width: 601px)"
+                      srcset={image}
+                    />
+                    <img
+                      loading="lazy"
+                      decoding="async"
+                      src={image}
+                      alt="fancy house"
+                      width="346"
+                      height="346"
+                      class="rounded-md"
+                    />
+                  </picture>
+                </li>
+              ))
+            }
+          </ul>
+          <a href="/" class="cs-button-solid">Get In Touch</a>
+        </div>
+      </section>
+</div>
 <style>
   /*-- -------------------------- -->
 <---          Gallery           -->
