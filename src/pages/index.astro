@@ -1,4 +1,6 @@
 ---
+import { AstroSeo } from '@astrolib/seo';
+
 import About from '../components/sections/About.astro';
 import ContactInfo from '../components/sections/Contact.astro';
 import Gallery from '../components/sections/Gallery.astro';
@@ -8,7 +10,10 @@ import Logos from '../components/sections/Logos.astro';
 import Services from '../components/sections/Services.astro';
 
 ---
-
+<AstroSeo
+  title="WallyVac"
+  description="A short description goes here."
+/>
 <Layout title="Home | Wally Vac">
 	<Hero />
 	<Services/>
