@@ -1,7 +1,6 @@
-<!-- ============================================ -->
-<!--                   Contact                    -->
-<!-- ============================================ -->
-
+---
+import ContactData from '../sections/contact.json';
+---
 <section id="contact-1780">
   <div class="cs-container">
       <div class="cs-form-group">
@@ -37,22 +36,12 @@
               <span class="cs-detail">Edmonton, Alberta</span>
           </div>
           <div class="cs-info">
-              <span class="cs-topper">Working Hours</span>
-              <span class="cs-detail">Monday - Saturday: 10:00 - 20:00</span>
-              <span class="cs-detail">Sunday: Closed</span>
-          </div>
-          <div class="cs-info">
               <span class="cs-topper">Contact</span>
-              <span class="cs-detail">M: +99 40 70 929</span>
-              <span class="cs-detail">E: wally@wallyvac.ca</span>
+              <span class="cs-detail">{ContactData.contact.phoneNumber}</span>
+              <span class="cs-detail">{ContactData.contact.email}</span>
           </div>
       </div>
   </div>
-
-  <!-- <div class="cs-picture-group">
-      <iframe class="cs-iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d172153.33373691145!2d-122.33979794999999!3d47.608715!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5490102c93e83355%3A0x102565466944d59a!2sSeattle%2C%20WA!5e0!3m2!1sen!2sus!4v1717096613140!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-  </div> -->
-
 </section>
 <style>
 /*-- -------------------------- -->

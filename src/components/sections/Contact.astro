@@ -1,8 +1,6 @@
-<!-- ============================================ -->
-<!--                   Stats                      -->
-<!-- ============================================ -->
-
-<!-- No headers, so no section tag -->
+---
+import ContactData from '../sections/contact.json';
+---
 <section id="contact-strip-324" >
     <ul class="cs-stat-group">
         <li class="cs-item">
@@ -11,7 +9,7 @@
             </picture>
             <div class="cs-flex-group">
                 <span class="cs-header">Phone</span>
-                <a href="tel:555-456-7899" class="cs-link">780-449-3529</a>
+                <a href="tel:780-449-3529" class="cs-link">{ContactData.contact.phoneNumber}</a>
             </div>
         </li>
         <li class="cs-item">
@@ -20,7 +18,7 @@
             </picture>
             <div class="cs-flex-group">
                 <span class="cs-header">Email Address</span>
-                <a href="" class="cs-link">wally@wallyvac.ca</a>
+                <a href="mailto:wally@wallyvac.ca" class="cs-link">{ContactData.contact.email}</a>
             </div>
         </li>
         <li class="cs-item">

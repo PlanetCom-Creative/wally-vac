@@ -1,6 +1,5 @@
 ---
 import AboutData from '../sections/about.json';
-const {topper, title, parText} = Astro.props;
 ---
 <div id="about">
     <section id="sbs-75">
@@ -18,7 +17,6 @@ const {topper, title, parText} = Astro.props;
                 <p class="cs-text">
                     {AboutData.content.parText}
                 </p>
-                <a class="cs-button-solid" aria-label="learn more about our programs" href="">Learn More</a>
             </div>
         </div>
     </section>

@@ -1,4 +1,6 @@
-<!-- ============================================ --><!--                   Footer                     --><!-- ============================================ -->
+---
+import ContactData from '../sections/contact.json';
+---
 <footer id="cs-footer-269">
   <div class="cs-container">
     <!-- Logo Group -->
@@ -27,19 +29,19 @@
         <span class="cs-header">Sitemap</span>
       </li>
       <li class="cs-nav-li">
-        <a class="cs-nav-link" href="">Home</a>
+        <a class="cs-nav-link" href="/">Home</a>
       </li>
       <li class="cs-nav-li">
-        <a class="cs-nav-link" href="">About</a>
+        <a class="cs-nav-link" href="/#about">About</a>
       </li>
       <li class="cs-nav-li">
-        <a class="cs-nav-link" href="">Services</a>
+        <a class="cs-nav-link" href="/#gallery">Gallery</a>
       </li>
       <li class="cs-nav-li">
-        <a class="cs-nav-link" href="">Portfolio</a>
+        <a class="cs-nav-link" href="/services">Services</a>
       </li>
       <li class="cs-nav-li">
-        <a class="cs-nav-link" href="#">Contact</a>
+        <a class="cs-nav-link" href="/contact">Contact</a>
       </li>
     </ul>
     <!-- Contact Info -->
@@ -48,11 +50,11 @@
         <span class="cs-header">Contact</span>
       </li>
       <li class="cs-contact-li">
-        <a class="cs-contact-link" href="tel: 780-245-4321">780-245-4321</a>
+        <a class="cs-contact-link" href="tel: 780-245-4321">{ContactData.contact.phoneNumber}</a>
       </li>
       <li class="cs-contact-li">
         <a class="cs-contact-link" href="mailto:wally@wallyvac.ca"
-          >wally@wallyvac.ca</a
+          >{ContactData.contact.email}</a
         >
       </li>
       <!-- Social Media -->
