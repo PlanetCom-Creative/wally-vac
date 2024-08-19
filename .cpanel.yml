@@ -9,4 +9,4 @@ build:
 # The deploy step to move the generated files to the correct location
 deploy:
   commands:
-    - rsync -av --delete ./dist/ /path/to/your/webroot/
+    - rsync -av --delete ./dist/ /home/wallyvacsite/public_html/
