@@ -1,0 +1,12 @@
+# .cpanel.yml
+
+# The build step to generate static files
+build:
+  commands:
+    - npm install  # Install dependencies
+    - npm run build  # Build the static site
+
+# The deploy step to move the generated files to the correct location
+deploy:
+  commands:
+    - rsync -av --delete ./dist/ /path/to/your/webroot/
