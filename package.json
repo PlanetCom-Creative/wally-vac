@@ -19,7 +19,5 @@
     "tailwindcss-animated": "^1.1.2"
   },
   "devDependencies": {
-    "@stackbit/cms-git": "^1.0.6",
-    "@stackbit/types": "^2.0.5"
   }
 }
