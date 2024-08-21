@@ -1,6 +1,7 @@
 ---
-import ContactData from '../sections/contact.json';
+import ContactData from "../sections/contact.json";
 ---
+
 <footer id="cs-footer-269">
   <div class="cs-container">
     <!-- Logo Group -->
@@ -18,9 +19,10 @@ import ContactData from '../sections/contact.json';
         />
       </a>
       <p class="cs-text">
-        Based in Edmonton, Alberta, Wally Vac combines cutting-edge technology
-        with expert knowledge to deliver precise, efficient, and reliable
-        hydrovac solutions.
+        Based in Edmonton, Alberta, Wally Vac specializes in state-of-the-art
+        hydrovac services, utilizing advanced technology and expert knowledge.
+        We deliver precise, efficient, and reliable hydrovac solutions to meet
+        all your needs.
       </p>
     </div>
     <!-- Links -->
@@ -50,7 +52,9 @@ import ContactData from '../sections/contact.json';
         <span class="cs-header">Contact</span>
       </li>
       <li class="cs-contact-li">
-        <a class="cs-contact-link" href="tel: 7802454321">{ContactData.contact.phoneNumber}</a>
+        <a class="cs-contact-link" href="tel: 7802454321"
+          >{ContactData.contact.phoneNumber}</a
+        >
       </li>
       <li class="cs-contact-li">
         <a class="cs-contact-link" href="mailto:wally@wallyvac.ca"
@@ -106,10 +110,13 @@ import ContactData from '../sections/contact.json';
     <div class="footer-credit max-w-screen-xl">
       <div class="sm:flex flex-row justify-between gap-10">
         <div class="flex-container">
-          <p class="mt-4 text-white">© <span id="current-year"></span> WallyVac Hydrovac</p>
+          <p class="mt-4 text-white">
+            © <span id="current-year"></span> WallyVac Hydrovac
+          </p>
           <script>
-            document.getElementById('current-year').textContent = new Date().getFullYear();
-        </script>
+            document.getElementById("current-year").textContent =
+              new Date().getFullYear();
+          </script>
         </div>
         <div class="flex-container">
           <p class="mt-4 text-white">
@@ -312,4 +319,3 @@ import ContactData from '../sections/contact.json';
     }
   }
 </style>
-

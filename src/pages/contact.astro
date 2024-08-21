@@ -1,9 +1,29 @@
 ---
+import { AstroSeo } from "@astrolib/seo";
+
 import Layout from '../layouts/Layout.astro';
 import PageContact from '../components/sections/PageContact.astro';
 import PageHeader from '../components/sections/PageHeader.astro';
 ---
-
+<AstroSeo
+  title="Contact | WallyVac | Hydrovac Company Alberta"
+  description="Based in Edmonton, Alberta, Wally Vac specializes in state-of-the-art hydrovac services, utilizing advanced technology and expert knowledge. We deliver precise, efficient, and reliable hydrovac solutions to meet all your needs."
+  openGraph={{
+    url: 'https://wallyvac.ca/',
+    title: 'Contact | WallyVac | Hydrovac Company Alberta',
+    description: 'Based in Edmonton, Alberta, Wally Vac specializes in state-of-the-art hydrovac services, utilizing advanced technology and expert knowledge. We deliver precise, efficient, and reliable hydrovac solutions to meet all your needs.',
+    images: [
+      {
+        url: 'https://ik.imagekit.io/oy5bt2urx/Wally-Vac-Truck.webp',
+        width: 800,
+        height: 600,
+        alt: 'Hydrovac truck',
+        type: 'image/webp',
+      },
+    ],
+    site_name: 'WallyVac | Hydrovac Company Alberta',
+  }}
+  />
 <Layout title="Contact Us | Wally Vac">
 	<PageHeader title="Contact"/>
 	<PageContact/>

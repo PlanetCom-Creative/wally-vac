@@ -1,24 +1,39 @@
 ---
-import { AstroSeo } from '@astrolib/seo';
+import { AstroSeo } from "@astrolib/seo";
 
-import About from '../components/sections/About.astro';
-import ContactInfo from '../components/sections/Contact.astro';
-import Gallery from '../components/sections/Gallery.astro';
-import Hero from '../components/sections/Hero.astro';
-import Layout from '../layouts/Layout.astro';
-import Logos from '../components/sections/Logos.astro';
-import Services from '../components/sections/Services.astro';
-
+import About from "../components/sections/About.astro";
+import ContactInfo from "../components/sections/Contact.astro";
+import Gallery from "../components/sections/Gallery.astro";
+import Hero from "../components/sections/Hero.astro";
+import Layout from "../layouts/Layout.astro";
+import Logos from "../components/sections/Logos.astro";
+import Services from "../components/sections/Services.astro";
 ---
+
 <AstroSeo
-  title="WallyVac"
-  description="A short description goes here."
-/>
-<Layout title="Home | Wally Vac">
-	<Hero />
-	<Services/>
-	<About />
-	<Gallery/>
-	<Logos/>
-	<ContactInfo/>
+  title="WallyVac | Hydrovac Company Alberta"
+  description="Based in Edmonton, Alberta, Wally Vac specializes in state-of-the-art hydrovac services, utilizing advanced technology and expert knowledge. We deliver precise, efficient, and reliable hydrovac solutions to meet all your needs."
+  openGraph={{
+    url: 'https://wallyvac.ca/',
+    title: 'WallyVac | Hydrovac Company Alberta',
+    description: 'Based in Edmonton, Alberta, Wally Vac specializes in state-of-the-art hydrovac services, utilizing advanced technology and expert knowledge. We deliver precise, efficient, and reliable hydrovac solutions to meet all your needs.',
+    images: [
+      {
+        url: 'https://ik.imagekit.io/oy5bt2urx/Wally-Vac-Truck.webp',
+        width: 800,
+        height: 600,
+        alt: 'Hydrovac truck',
+        type: 'image/webp',
+      },
+    ],
+    site_name: 'WallyVac | Hydrovac Company Alberta',
+  }}
+  />
+<Layout title="WallyVac | Hydrovac Company Alberta">
+  <Hero />
+  <Services />
+  <About />
+  <Gallery />
+  <Logos />
+  <ContactInfo />
 </Layout>
