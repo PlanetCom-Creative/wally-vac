@@ -7,7 +7,9 @@ import robotsTxt from "astro-robots-txt";
 export default defineConfig({
   output: 'static',
   site: 'https://walyvac.ca',
-  integrations: [tailwind(), robotsTxt()],
+  integrations: [
+    tailwind(), 
+    robotsTxt()],
   server: {
     port: 3000 // Set the port to 3000
   }
