@@ -1,0 +1,35 @@
+---
+import { AstroSeo } from "@astrolib/seo";
+import AboutSection from '../components/sections/About.astro';
+import Contact from '../components/sections/Contact.astro';
+import FAQ from '../components/sections/FAQ.astro';
+import Layout from '../layouts/Layout.astro';
+import PageHeader from '../components/sections/PageHeader.astro';
+
+---
+<AstroSeo
+  title="About | WallyVac | Alberta Hydrovac Company"
+  description="At WallyVac, we offer supeior hydrovac services with a commitment to excellence. Our team of highly skilled Hydrovac Operators and reliable Hydrovac trucks ensure that we can handle all your hydrovac needs efficiently and effectively. Whether you have a large-scale project or a smaller task, our expertise and state-of-the-art equipment are ready to deliver exceptional results."
+  openGraph={{
+    url: 'https://wallyvac.ca/',
+    title: 'About | WallyVac | Alberta Hydrovac Company',
+    description: 'Based in Edmonton, Alberta, Wally Vac specializes in state-of-the-art hydrovac services, utilizing advanced technology and expert knowledge. We deliver precise, efficient, and reliable hydrovac solutions to meet all your needs.',
+    images: [
+      {
+        url: 'https://ik.imagekit.io/oy5bt2urx/Wally-Vac-Truck.webp',
+        width: 800,
+        height: 600,
+        alt: 'Hydrovac truck',
+        type: 'image/webp',
+      },
+    ],
+    site_name: 'WallyVac | Alberta Hydrovac Company',
+  }}
+  />
+
+<Layout>
+    <PageHeader title="About"/>
+    <AboutSection/>
+    <FAQ/>
+    <Contact/>
+</Layout>
