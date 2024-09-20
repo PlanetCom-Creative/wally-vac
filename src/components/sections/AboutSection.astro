@@ -1,7 +1,7 @@
 ---
-import AboutData from '../sections/about.json';
+import AboutData from './aboutsection.json';
 ---
-<div id="about">
+
     <section id="sbs-75">
         <div class="cs-container">
             <div class="cs-wrapper">
@@ -15,13 +15,18 @@ import AboutData from '../sections/about.json';
                 <!-- <span class="cs-topper quin">{AboutData.content.topper}</span> -->
                 <h2 class="cs-title">{AboutData.content.title}</h2>
                 <p class="cs-text">
-                    {AboutData.content.parText}<br><br>
+                    <div class="mb-4">
+                        {AboutData.content.parText}
+                    </div>
+                    <div class="mb-4">   
                     {AboutData.content.parText2}
+                    </div>
+                    {AboutData.content.parText3}
                 </p>
             </div>
         </div>
     </section>
-</div>
+
 <style>
  /*-- -------------------------- -->
 <---       Side By Side         -->

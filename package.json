@@ -12,8 +12,9 @@
   "dependencies": {
     "@astrojs/tailwind": "^5.1.1",
     "@astrolib/seo": "^1.0.0-beta.5",
+    "@fontsource/lato": "^5.1.0",
     "@fontsource/palanquin": "^5.0.13",
-    "@fontsource/palanquin-dark": "^5.0.20",
+    "@fontsource/palanquin-dark": "^5.1.0",
     "@sentry/browser": "^8.26.0",
     "astro": "^4.15.7",
     "astro-robots-txt": "^1.0.0",
